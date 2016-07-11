@@ -22,6 +22,7 @@ def I_am_a_scrub(scrubList):
 
 swap = lambda a, b: (b, a)
 scrubby_list = lambda: int(time.time() % 2)
+
 def scrub_check(scrubList):
 	'''
 	Checks list elements to ensure it's in order.
