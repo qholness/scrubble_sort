@@ -30,3 +30,5 @@ def check(alist):
 		for n in range(i+1, len(alist)):
 			if alist[i] > alist[n]:
 				return False
+
+'''Runtime is O(n)+"Scrubs"
