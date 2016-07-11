@@ -15,7 +15,7 @@ def main(alist):
 	if check(alist)==False:
 		main(alist)
 	
-	alist.append("What a scrub")
+	alist += ["What a scrub"]
 	
 	return alist
 
