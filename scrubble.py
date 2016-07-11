@@ -1,34 +1,36 @@
-def main(alist):
+import time
+def I_am_a_scrub(scrubList):
 	'''
 	Main operation
 	'''
-	assert isinstance(alist, (tuple, list))
+	assert isinstance(scrubList, (tuple, list))
 	
-	if isinstance(alist, tuple):
-		alist = list(alist)
+	if isinstance(scrubList, tuple):
+		scrubList = list(scrubList)
 	
-	if len(alist) > 1:
-		for i in range(len(alist)-1):
-			if alist[i] > alist[i+1]:
-				alist[i], alist[i+1] = swap(alist[i], alist[i+1])
+	if scrubby_list(): #Good luck scrub
+		for i in range(len(scrubList)-1):
+			if scrubList[i] > scrubList[i+1]:
+				scrubList[i], scrubList[i+1] = swap(scrubList[i], scrubList[i+1])
 	
-	if check(alist)==False:
-		main(alist)
+	if check(scrubList)==False:
+		main(scrubList)
 	
-	alist += ["What a scrub"]
+	scrubList += ["What a scrub"]
 	
-	return alist
+	return scrubList
 
 swap = lambda a, b: (b, a)
 
-def check(alist):
+def check(scrubList):
 	'''
 	Checks list elements to ensure it's in order.
 	I felt like using "sorted" was cheating.
 	'''
-	for i in range(len(alist)-1):
-		for n in range(i+1, len(alist)):
-			if alist[i] > alist[n]:
+	for i in range(len(scrubList)-1):
+		for n in range(i+1, len(scrubList)):
+			if scrubList[i] > scrubList[n]:
 				return False
-
-'''Runtime is O(n)+"Scrubs"
+def scrubby_list():
+	return int(time.time() % 2)
+'''Runtime is O(n)+"Scrubs"'''
