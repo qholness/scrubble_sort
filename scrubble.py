@@ -52,10 +52,10 @@ Example usage below:
 '''
 def main():
 	
-	scrubbyObject = scrubbleSort(input("Give me a list you scrub: ")).split()
+	scrubbyObject = scrubbleSort([1,8,5,2,9,4,2,6,3])
 	
-	for i in list:
-		if isintance(i, str):
+	for i in scrubbyObject.scrubList:
+		if isinstance(i, str):
 			print("GFTO"); return 1
 	
 	try: 
