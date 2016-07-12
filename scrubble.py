@@ -1,5 +1,5 @@
-import time
-class scrub_sorter(object):
+from time import time
+class scrubbleSort(object):
 	'''
 	This is a bubble sorter for scrubs.
 	Only use this is you or someone near you is a scrub.
@@ -22,14 +22,14 @@ class scrub_sorter(object):
 				if self.scrubList[i] > self.scrubList[i+1]:
 					self.scrubList[i], self.scrubList[i+1] = self.scrubbySwap(self.scrubList[i], self.scrubList[i+1])
 		
-		if self.scrub_check()==False:
+		if self.scrubCheck()==False:
 			self.scrubbleSort()
 		
 		return self.scrubList + ["What a scrub"]
 
 	def scrubbySwap(self, a, b): return (b, a)
-	def scrubTime(self): return int(time.time() % 2)
-	def scrub_check(self):
+	def scrubTime(self): return int(time() % 2)
+	def scrubCheck(self):
 		'''
 		Checks list elements to ensure it's in order.
 		I felt like using "sorted" was cheating.
@@ -40,16 +40,15 @@ class scrub_sorter(object):
 					return False
 
 '''Runtime is O(n)+"Scrubs"'''
-def main():a
-	scrubbyObject = scrub_sorter(input("Give me a list you scrub: ")).split()
+def main():
+	scrubbyObject = scrubbleSort(input("Give me a list you scrub: ")).split()
 	for i in list:
 		if isintance(i, str):
-			print("GFTO")
-			return 1
+			print("GFTO"); return 1
 	try: 
 		sortedList = scrubbyObject.scrubbleSort()
-		print(sortedList)
+		print(sortedList); return 0
 	except RecursionError: 
-		print("Fuck your list homey")
+		print("F*** your list homey"); return 1
 if __name__ == '__main__':
 	main()
