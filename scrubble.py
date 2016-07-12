@@ -1,4 +1,8 @@
 from time import time
+
+
+
+
 class scrubbleSort(object):
 	'''
 	This is a bubble sorter for scrubs.
@@ -8,6 +12,7 @@ class scrubbleSort(object):
 	'''
 	def __init__(self, scrubList):
 		self.scrubList = scrubList
+		
 	def scrubbleSort(self):
 		'''
 		Main operation
@@ -28,7 +33,9 @@ class scrubbleSort(object):
 		return self.scrubList + ["What a scrub"]
 
 	def scrubbySwap(self, a, b): return (b, a)
+	
 	def scrubTime(self): return int(time() % 2)
+	
 	def scrubCheck(self):
 		'''
 		Checks list elements to ensure it's in order.
@@ -41,14 +48,19 @@ class scrubbleSort(object):
 
 '''Runtime is O(n)+"Scrubs"'''
 def main():
+	
 	scrubbyObject = scrubbleSort(input("Give me a list you scrub: ")).split()
+	
 	for i in list:
 		if isintance(i, str):
 			print("GFTO"); return 1
+	
 	try: 
 		sortedList = scrubbyObject.scrubbleSort()
 		print(sortedList); return 0
+	
 	except RecursionError: 
 		print("F*** your list homey"); return 1
+		
 if __name__ == '__main__':
 	main()
