@@ -58,8 +58,6 @@ def main():
 	
 	scrubbyObject = scrubbleSort([1,8,5,2,9,4,2,6,3])
 	
-	for i in scrubbyObject
-	
 	try: 
 		sortedList = scrubbyObject.scrubbleSort()
 		print(sortedList); return 0
