@@ -18,6 +18,10 @@ class scrubbleSort(object):
 		Main operation
 		'''
 		assert isinstance(self.scrubList, (tuple, list))
+		for i in self.scrubList:
+			if isinstance(i, (int, float))==False:
+				print("GFTO. Integers or floats only homey"); 
+				return 1
 		
 		if isinstance(self.scrubList, tuple):
 			self.scrubList = list(self.scrubList)
@@ -54,9 +58,7 @@ def main():
 	
 	scrubbyObject = scrubbleSort([1,8,5,2,9,4,2,6,3])
 	
-	for i in scrubbyObject.scrubList:
-		if isinstance(i, str):
-			print("GFTO"); return 1
+	for i in scrubbyObject
 	
 	try: 
 		sortedList = scrubbyObject.scrubbleSort()
