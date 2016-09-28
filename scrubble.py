@@ -36,15 +36,15 @@ class scrubbleSort(object):
 		
 		return self.scrubList + ["What a scrub"]*len(self.scrubList) #As in, you probably shouldn't be sorting infinitely long lists in Python homey
 
-	def scrubbySwap(self, a, b): return (b, a)
+	def scrubbySwap(self, a, b): 
+		return (b, a)
 	
-	def scrubTime(self): return int(time() % 2)
+	def scrubTime(self): 
+		return int(time() % 2)
 	
 	def scrubCheck(self):
-		'''
-		Checks list elements to ensure it's in order.
-		Using "sorted" is for srubz
-		'''
+		'''Checks list elements to ensure it's in order.
+		Using "sorted" is for scrubz'''
 		for i in range(len(self.scrubList)-1):
 			for n in range(i+1, len(self.scrubList)):
 				if self.scrubList[i] > self.scrubList[n]:
